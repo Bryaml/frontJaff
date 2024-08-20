@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tus estilos personalizados aquí */
+.navbar {
+  @apply bg-black bg-opacity-75 hover:bg-opacity-100 duration-500 shadow-md w-full z-20 fixed top-0 left-0;
+}
+
+.navbar-container {
+  @apply w-11/12 flex items-center py-4 mx-auto;
+}
+
+.navbar-link {
+  @apply text-white hidden md:block text-xs mr-3 flex items-center duration-500 hover:text-orange-400 hover:border-orange-400 border-b-2 hover:pb-1 border-transparent;
+}
+
+.navbar-logo {
+  @apply h-12 ml-4 md:h-20 md:ml-0;
+}
+
+.menu-button {
+  @apply text-white mr-4;
+}
+
+.menu-icon {
+  @apply icon icon-tabler;
+}
+
+.popover-button {
+  @apply text-white hover:text-orange-400 hover:border-orange-400 duration-500 border-b-2 border-transparent w-full;
+}
+
+.popover-panel {
+  @apply absolute z-10 w-full overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white;
+}
+
+.segment-item {
+  @apply mb-2 border-b-2 pb-1 border-transparent hover:border-zinc-300 duration-500;
+}
+
+.segment-link {
+  @apply px-12;
+}
